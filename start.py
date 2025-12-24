@@ -1,7 +1,6 @@
 """
-这个脚本的 拆分图集 功能依赖于 unpack_atlas 项目
-该项目由 foxsugar 开发
-原始项目地址 https://github.com/foxsugar/unpack_atlas
+这个脚本的 拆分图集 功能依赖于 foxsugar 开发的 unpack_atlas 项目
+unpack_atlas 项目地址 https://github.com/foxsugar/unpack_atlas
 该项目遵循 [MIT License] 开源协议。
 """
 
