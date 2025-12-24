@@ -7,7 +7,6 @@
 
 ## 需要的环境
 - Python3 Pillow  
-- [解压软件7z](https://www.7-zip.org/):脚本unmix.py第5行指定7z的默认位置,可根据情况自行修改
 
 ## 使用方法
 #### 安装模块

@@ -2,7 +2,7 @@ import os
 import subprocess
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-SEVEN_ZIP_EXE=r"C:\Program Files\7-Zip\7z.exe"
+SEVEN_ZIP_EXE=r".\7z\7z.exe"
 
 def unmix_function()->None:
     """通过7z解包.mix文件"""
