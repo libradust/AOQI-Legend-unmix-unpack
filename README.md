@@ -1,7 +1,7 @@
 # 奥奇传说页游解包脚本
 
 ## 主要功能
-- **解压mix**:提取脚本所在文件夹下的*mix*文件 
+- **解压mix**:提取脚本所在文件夹下的mix文件 
 - **修改atlas和webp**:使文件可被spine软件使用 
 - **拆分图集**:根据atlas拆分png 
 
@@ -15,8 +15,8 @@ pip install -r requirements.txt
 ```
 #### 需要的文件
 - mix文件(或准备好的atlas文件)  
-- **与atlas对应**的webp图片(或准备好的png图片)对webp图片名字没有要求  
-*mix文件和webp可在H5版本的页游网站上,通过开发人员工具(F12)对网络资源捕捉得到* 
+- **与atlas对应**的webp图片(或准备好的png图片)对图片名字没有要求  
+mix文件和webp可在H5版本的页游网站上,通过对网络资源解析得到 
 - 均放在脚本文件同目录下  
 ![文件](example/1.png)  
 ***<font color="red">⚠️默认配置下只支持一个mix(或atlas)和一个webp对应,暂不支持多webp</font>***  
@@ -42,3 +42,11 @@ python unpack.py
 
 ## 许可证
 - [MIT](LICENSE)
+
+
+
+## History
+ 
+ - 2025/12/24:No additional install 7z
+ - 2025/11/22:initialize repository
+ 
