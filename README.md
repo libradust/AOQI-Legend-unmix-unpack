@@ -24,11 +24,11 @@ pip install pillow
 mix文件和图集可在H5版本页游网站上,对网络资源解析得到 
 - 均放在脚本文件同目录下  
 ![文件](example/1.png)  
-***⚠️默认配置下只支持一个mix(或atlas)和一个图集对应,暂不支持多webp</font>***  
+***⚠️默认配置下只支持一个mix(或atlas)和一个图集对应,暂不支持多图集</font>***  
 ***⚠️脚本同文件夹下不应放无关的mix,atlas或图片</font>***
 #### 使用
 
-情况1.**解压mix+修改atlas和webp+拆分图集全流程**
+情况1.**解压mix+拆分图集全流程**
 使用一个mix和一个图集
 ```bash
 python start.py
