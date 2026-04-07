@@ -10,11 +10,9 @@ def get_img_item_list(filename) -> list:
     """
     f = open(filename, 'r')
     lines = f.readlines()
-    print(len(lines))
     image_name = lines[1]
-    print("图片名称: " + image_name)
+    print("图集名称: " + image_name)
     image_num = int((len(lines) - 6) / 7)
-    print("拆分图片个数: " + str(image_num))
     item_list = []
     for i in range(image_num):
         item = {}
@@ -29,7 +27,7 @@ def get_img_item_list(filename) -> list:
 
         item_list.append(item)
 
-    return item_list
+    return item_list,image_num
 
 
 def gen_new_img(item_list, img_file, save_dir)->None:
@@ -87,14 +85,15 @@ def unpack(file_dir)->None:
         if file_suffix == '.atlas':
             # 找png 如果有则切图
             img_file = os.path.join(cwd, file_name + '.png')
-            print(img_file)
+            print(f"图集地址: {img_file}")
             if os.path.exists(img_file):
                 # 拆图
                 # item_list = readFile()
                 atlas_file = os.path.join(cwd, p)
-                item_list = get_img_item_list(atlas_file)
+                item_list, image_num = get_img_item_list(atlas_file)
                 save_dir = os.path.join(cwd,file_name)
                 gen_new_img(item_list, img_file, save_dir)
+                print(f"成功拆分图集 {file_name}，共{image_num}张图片,输出到文件夹: {save_dir} 中")
             else:
                 print('找不到对应png')
 

@@ -2,36 +2,44 @@
 
 ## 主要功能
 - **解压mix**:提取脚本所在文件夹下的mix文件 
-- **修改atlas和webp**:使文件可被spine软件使用 
-- **拆分图集**:根据atlas拆分png 
+- **修改atlas和图集**:使文件可被spine软件使用 
+- **拆分图集**:根据atlas拆分图集
 
 ## 需要的环境
-- Python3 Pillow  
+- Python3 Pillow库  
 
 ## 使用方法
 #### 安装模块
 ```bash
 pip install -r requirements.txt
 ```
+或
+```bash
+pip install pillow
+```
 #### 需要的文件
 - mix文件(或准备好的atlas文件)  
-- **与atlas对应**的webp图片(或准备好的png图片)对图片名字没有要求  
-mix文件和webp可在H5版本的页游网站上,通过对网络资源解析得到 
+- **与atlas对应**的图集,对图片名字没有要求
+**⚠️脚本同文件夹下不应放无关的mix,atlas或图片**  
+mix文件和图集可在H5版本页游网站上,对网络资源解析得到 
 - 均放在脚本文件同目录下  
 ![文件](example/1.png)  
-***<font color="red">⚠️默认配置下只支持一个mix(或atlas)和一个webp对应,暂不支持多webp</font>***  
-***<font color="red">⚠️脚本同文件夹下不应放无关的mix,atlas或webp文件</font>***
+***⚠️默认配置下只支持一个mix(或atlas)和一个图集对应,暂不支持多webp</font>***  
+***⚠️脚本同文件夹下不应放无关的mix,atlas或图片</font>***
 #### 使用
 
-情况1.**解压mix+修改atlas和webp+拆分png**
+情况1.**解压mix+修改atlas和webp+拆分图集全流程**
+使用一个mix和一个图集
 ```bash
 python start.py
 ```
-情况2.**只解压mix**
+情况2.**只拆mix**
+使用一个mix
 ```bash
 python unmix.py
 ```
-情况3.**只拆分png**
+情况3.**只拆图集**
+使用一个atlas和一个图集
 ```bash
 python unpack.py
 ```
@@ -47,6 +55,7 @@ python unpack.py
 
 ## History
  
+ - 2025/4/7:optimize and add prompt
  - 2025/12/24:No additional install 7z
  - 2025/11/22:initialize repository
  
